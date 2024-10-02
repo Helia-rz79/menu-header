@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assests/css/fontello.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(250, 247, 204);
+            color: rgb(78, 78, 112);
+            font-family: "Fredoka", sans-serif;
+        }
+
+        header {
+            border-bottom: 2px solid rgba(78, 78, 112, 0.308);
+            width: 100%;
+            height: 50px;
+            display: flex;
+
+            >* {
+
+                text-transform: capitalize;
+            }
+
+            >h2 {
+                /* border: 1px solid red; */
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .menu {
+                /* border: 2px solid green; */
+                width: 40%;
+                margin: 0 20%;
+
+                >ul {
+                    width: 100%;
+                    height: 100%;
+                    /* border: 2px solid blueviolet; */
+                    display: flex;
+
+                    >li {
+                        width: 100%;
+                        list-style-type: none;
+                        /* border: 2px solid red; */
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: .5s;
+                        &:hover{
+                            background-color: rgb(245, 241, 183);
+                        }
+
+                        >a {
+                            text-decoration: none;
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+            }
+
+            >div {
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+        }
+
+        section{
+            display: flex;
+            width: 100%;
+            height: 600px;
+            >.pragraph {
+              width: 40%;
+              height: 600px;
+              /* border: 2px solid red; */
+
+            >span {
+                font-size: 35px;
+                display: block;
+                margin: 15px 20px;
+            }
+
+            >h1 {
+                font-size: 100px;
+                margin: 0 40px;
+                font-family: "Merriweather", serif;
+            }
+            >.titr{
+                font-family: "Merriweather", serif;
+                font-size: 30px;
+                margin: 0 20px;
+            }
+            p{
+                font-size: 15px;
+                margin: 15px 20px;
+            }
+            >.shop{
+                margin: 40px 20px 5px;
+                text-transform: capitalize;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .img{
+            width: 55%;
+            height: 700px;
+            margin: 0px auto;
+            /* border: 2px solid blue; */
+            position: relative;
+            &:hover{
+                >img:last-of-type{
+                    opacity: 1;
+                    padding-left: 70px;
+                    padding-top: 55px;
+                }
+            &:hover{
+                >img:first-of-type{
+                    opacity: 0;
+                }
+            }    
+                
+                
+            }
+            >img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: 1s;
+                &:last-of-type{
+                    opacity: 0;
+                }
+                    
+            }
+         }
+        }
+        h6{
+            font-size: 15px;
+            padding-left: 10px;
+            text-decoration: overline;
+        }
+        nav{
+            padding-left: 40px;
+            padding-top: 5px;
+            >*{
+                color: rgba(38, 38, 85, 0.767);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 class="icon-soundcloud-circled">closca</h2>
+        <nav class="menu">
+            <ul>
+                <li><a href="">mask</a></li>
+                <li><a href="">helmet</a></li>
+                <li><a href="">bottle</a></li>
+                <li><a href="">accessories</a></li>
+            </ul>
+        </nav>
+        <div>
+            <span class=" icon-search"></span>
+            <span class="icon-user-o"></span>
+            <span class="icon-shopping-bag"></span>
+        </div>
+    </header>
+    <section>
+        
+    <div class="pragraph">
+
+        <span>Closca Bottle</span>
+        <h1>Beach</h1>
+        <span>€ 39.90</span>
+        <br><br><br><br><br><br>
+        <div class="titr">In 20 years, there could be more plastic in our oceans than fish.</div>
+        <p>Plastic pollution injures more than 100.000  marine animals every year.It takes around 450 years for one
+         plastic bottle to decompose.</p>
+         <div class="shop">shop new <span class="icon-right"></span></div>
+
+    </div>
+    <div class="img">
+        <img src="assests/img/5.png" alt="">
+        <img src="assests/img/6.webp" alt="">
+    </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <h6>coded by: helia rezaie</h6>
+        <nav>
+            <a class="icon-mail" href="http://milto:h.rezaie2479@gmail.com" target="_blank"></a>
+            <a class="icon-linkedin-squared" href="http://linkdin.com/in/helia-rezaie-web" target="_blank"></a>
+            <a class="icon-instagram-1" href="http://www.instagram.com/helia.r-web" target="_blank"></a>
+        </nav>
+    </footer>
+    <br>
+</body>
+
+</html>
