@@ -1,8 +1,5 @@
 # menu-header
 
-
-**😊If you have a lot of information to display on your site, why don't you use my accordion menu**
-
 ![4](https://github.com/user-attachments/assets/1c7d8bb2-3617-4964-8b85-467a1d8c2129)
 
 
